@@ -1,1 +1,46 @@
 
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Arial Narrow Bold', sans-serif;
+    background-color: rgb(242, 238, 231);
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+    background-color: aliceblue;
+    text-align: right;
+    
+}
+div.container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+section{
+    width:33.33%;
+    padding:10px;
+    border: 1px solid black;
+    margin:5px;
+    background-color: rgba(0, 251, 255, 0.173);
+}
+@media (min-width:992px) {
+    section{
+        width:30%
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    section .content{
+        width:50%
+    }
+}
+@media (max-width:767px) {
+    section{
+        width:100%
+    }
+}
